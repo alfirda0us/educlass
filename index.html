@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClassEdu Indonesia</title>
+    <link rel="stylesheet" href="assets/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="svg" href="assets/src/icon/logo.png">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand h-20 d-flex justify-content-between align-items-center px-5 vh-12">
+        <div class="nav-container container-fluid">
+            <div class="logo d-flex align-items-center">
+            <i class="fa-solid fa-code me-2"></i>
+            <a class="navbar-brand" href="index.html">ClassEdu</a>
+            </div>
+            <input type="checkbox" class="d-none" id="menu-toggle">
+            <label for="menu-toggle" class="hamburger">&#9776;</label>
+            <div class="nav-items navbar-collapse justify-content-between align-items-center mb-0">
+                <ul class="d-flex align-items-center justify-content-center gap-5 mb-0">
+                    <li class="nav-item mb-0"><a class="nav-link mb-0" href="#home">Home</a></li>
+                    <li class="nav-item mb-0"><a class="nav-link mb-0" href="#features">Features</a></li>
+                    <li class="nav-item mb-0"><a class="nav-link mb-0" href="#course">Courses</a></li>
+                    <li class="nav-item mb-0"><a class="nav-link mb-0" href="#about-us">About Us</a></li>
+                </ul>
+            </div>
+            <div class="sign-in d-flex">
+                <button class="btn-login" id="button">LogIn</button>
+                <button class="btn-signup" id="button">SignUp</button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero d-flex align-items-center">
+        <section class="main-container">
+            <div class="hero-content d-flex flex-column justify-content-start align-items-start" id="home">
+                <h3><i class="fa-solid fa-arrow-trend-up"></i>Top 10 Most Rising Online Course In Asia</h3>
+                <h1>Where Learning <br>Meets Innovation</h1>
+                <p>Enhance the learning experience and encourage the development of new ideas and skills only with ClassEdu </p>
+                <div class="button d-flex justify-content-start align-items-start gap-3 mt-4">
+                    <div class="btn-getstarted" id="button">
+                        <a href="">Get Started</a>
+                    </div>
+                    <div class="btn-seereviews" id="button">
+                        <a href="#reviews">See Reviews</a>
+                    </div>
+                </div>
+            </div>
+            <section class="w-50"></section>
+        </section>
+    </section>
+
+    <section class="partners d-flex flex-row align-items-center justify-content-center text-center px-5 py-5 gap-4">
+        <div class="partner-container">
+            <div class="title d-flex align-items-center justify-content-center">
+                <h2>More than 1900+ universitises uses ClassEdu (and counting)</h2>
+            </div>
+            <div class="partner-logos d-flex flex-row align-items-center justify-content-center gap-5">
+                <div class="logo d-flex flex-row align-items-center justify-content-center gap-2">
+                    <i class="fa-solid fa-school fs-2"></i>
+                    <h3>Telkom</h3>
+                </div>
+                <div class="logo d-flex flex-row align-items-center justify-content-center gap-2">
+                    <i class="fa-solid fa-school fs-2"></i>
+                    <h3>CodeIn</h3>
+                </div>
+                <div class="logo d-flex flex-row align-items-center justify-content-center gap-2">
+                    <i class="fa-solid fa-school fs-2"></i>
+                    <h3>Harvard</h3>
+                </div>
+                <div class="logo d-flex flex-row align-items-center justify-content-center gap-2">
+                    <i class="fa-solid fa-school fs-2"></i>
+                    <h3>Stanford</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <div class="feature-header content" id="header">
+            <h2>Our Features</h2>
+            <p>With EduCourse, EduMeet and EduTalks Making it easy for you to achieve your learning goals. Learn With ClassEdu now and take the first step for a brighter future!</p>
+        </div>
+        <div class="feature-content">
+            <div class="courses" id="card">
+            <i class="fa-solid fa-chalkboard-user"></i>
+            <h3>Courses</h3>
+            <p>Engage in interactive lessons with multimedia content, quizzes, and real-time feedback to enhance your learning experience.</p>
+            <button>Try Courses</button>
+        </div>
+        <div class="comunity" id="card">
+            <i class="fa-solid fa-user-group"></i>
+            <h3>Comunity</h3>
+            <p>Join a vibrant community of learners and educators to share knowledge, collaborate on projects, and support each other's growth.</p>
+            <button>Join Comunity</button>
+        </div>
+        <div class="certificate" id="card">
+            <i class="fa-solid fa-certificate"></i>
+            <h3>Certificate</h3>
+            <p>Earn certificates and badges for completing courses and achieving milestones, showcasing your skills and dedication.</p>
+            <button>Get Certificate</button>
+        </div>
+        </div>
+    </section>
+
+    <section class="about-us d-flex justify-content-center align-items-center w-100" id="about-us">
+        <div class="about-container d-flex flex-column align-items-center justify-content-center w-100">
+            <div class="about-us-header content d-flex p-0 m-0 mb-4" id="header">
+                <h2>About Us</h2>
+                <p>Get To Know More About Our passion for making learning accessible, engaging, and effective for everyone</p>
+            </div>
+            <div class="about-content w-100">
+                <div class="about-nigga py-5 w-100 d-flex flex-column justify-content-center align-items-center gap-5">
+                    <div class="article-top article d-flex flex-column gap-1 p-0" id="content">
+                        <h3>Founding Story</h3>
+                        <p>ClassEdu is an innovative online learning platform that was founded in 2023 with the mission to transform education through technology. Built by passionate educators and developers, ClassEdu aims to make learning more accessible, engaging, and future-oriented for learners around the world.</p>
+                        <p>We believe that education is the key to unlocking potential, and our platform is designed to support students, professionals, and institutions in achieving their goals.</p>
+                    </div>
+                    <div class="article-buttom article d-flex gap-5 justify-content-between p-0" id="content">
+                        <div class="mission">
+                            <h3>Our Mission</h3>
+                            <p>At ClassEdu, our mission is to empower individuals to achieve their full potential through accessible and innovative online education.</p>
+                        </div>
+                        <div class="list d-flex flex-wrap justify-content-center align-items-center gap-4">
+                            <div>
+                                <h2>59M+</h2>
+                                <p>Learners</p>
+                            </div>
+                            <div>
+                                <h2>200K+</h2>
+                                <p>Courses</p>
+                            </div>
+                            <div>
+                                <h2>800M+</h2>
+                                <p>Courses Enrollments</p>
+                            </div>
+                            <div>
+                                <h2>70K+</h2>
+                                <p>Instructors</p>
+                            </div>
+                            <div>
+                                <h2>75</h2>
+                                <p>Language</p>
+                            </div>
+                            <div>
+                                <h2>14K+</h2>
+                                <p>Enterprise Customers</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="reviews content" id="reviews">
+        <div class="review-header" id="content">
+            <h2>What Customers Says</h2>
+            <p>Discover why learners around the world choose ClassEdu for their online education. Read testimonials from our satisfied users and see how our platform has transformed their learning experience.</p>
+        </div>
+        <div class="review-content d-flex flex-wrap align-items-center justify-content-center gap-4">
+            <div class="card d-flex flex-column align-items-start justify-content-evenly gap-3 p-4">
+                <i class="fa-solid fa-quote-left"></i>               
+                <p class="text-start">"ClassEdu has completely transformed my learning experience. The interactive courses and supportive community have helped me achieve my goals faster than I ever thought possible."</p>
+                <div class="user d-flex flex-column align-items-start justify-content-start gap-1">
+                    <h6>Haidar Rauf</h6>
+                    <p>Student at IDN Boarding School Solo</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer d-flex flex-column align-items-start justify-content-around text-start gap-4 pt-2">
+        <div class="footer-top d-flex w-100 justify-content-between align-items-start">
+            <div class="logo d-flex align-items-center justify-content-center gap-2 pt-4">
+               <i class="fa-solid fa-code fs-2"></i>
+               <h3>ClassEdu</h3>
+            </div>
+            <div class="footer-list d-flex gap-5">
+                <div class="list d-flex flex-column gap-2">
+                    <h5>Courses</h5>
+                    <a>HTML Courses</a>
+                    <a>CSS Courses</a>
+                    <a>JavaScript Courses</a>
+                    <a>Phyton Courses</a>
+                </div>
+                <div class="list d-flex flex-column gap-2">
+                    <h5>About Us</h5>
+                    <a>Founding Story</a>
+                    <a>MileStone</a>
+                    <a>Data Statitic</a>
+                </div>
+                <div class="list d-flex flex-column gap-2">
+                    <h5>Help</h5>
+                    <a>FAQ</a>
+                    <a>Privacy & Policy</a>
+                    <a>Accessiblity</a>
+                    <a>Contact Us</a>
+                </div>
+                <div class="list d-flex flex-column gap-2">
+                    <h5>Comunity</h5>
+                    <a>Affiliate</a>
+                    <a>Infestor</a>
+                    <a>Learners</a>
+                    <a>Partners</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom d-flex w-100 justify-content-between align-items-end border-top pt-4">
+                <p>© 2024 ClassEdu. All rights reserved.</p>
+            <div class="social-media d-flex align-items-center justify-content-center gap-4">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        
+        
+
+    </section>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/fb8d0c8468.js" crossorigin="anonymous"></script>
+</html>

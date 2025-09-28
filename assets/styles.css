@@ -50,7 +50,6 @@
 
 
 :root{
-    /* color pallate */
     --black-color : #151515;
     --gray-color-dark : #5d5c5c;
     --gray-color-medium : #afafaf;
@@ -63,7 +62,6 @@
 
     --body-font : 'matter', 'poppins', sans-serif;
 
-    /* font size */
     --big-font-size: 8rem;
     --h1-font-size: 4.5rem;
     --h2-font-size: 3.5rem;
@@ -73,7 +71,6 @@
     --small-font-size: 1.2rem;
     --smaller-font-size: 1rem;
 
-    /* font weight */
     --font-weight-thin: 100;
     --font-weight-extra-light: 200;
     --font-weight-light: 300;
@@ -208,7 +205,7 @@ nav{
     cursor: pointer;
 }
 
-.main-container{
+.hero{
     width: 100%;
     height: 80vh;
     display: flex;
@@ -222,8 +219,13 @@ nav{
     padding-block: 10rem;
 }
 
+
 .hero-content {
-    color:  var(--background-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    color: var(--background-color);
     width: 50%;
     min-height: 120px;
     min-width: 750px;
@@ -242,10 +244,6 @@ nav{
     font-weight: var(--font-weight-bold);
     margin-bottom: 20px;
     min-width: 750px;
-}
-
-.hero-content h1 span{
-    color: var(--primary-color-dark);
 }
 
 .hero-content p{
@@ -294,6 +292,10 @@ nav{
 
 .hero-content .btn-seereviews a:hover{
     scale: 1.025;
+}
+
+.hero .space {
+    width: 35%;
 }
 
 .partners{
@@ -535,6 +537,14 @@ nav{
     color: var(--background-color);
 }
 
+.footer .footer-top {
+     display: flex;
+     width: 100%;
+     justify-content: space-between;
+     align-items: start;
+    
+}
+
 .footer .footer-list{
     display: flex;
     justify-content: space-between;
@@ -580,6 +590,12 @@ nav{
         font-size: var(--h3-font-size);
         max-width: 100px;
     }
+    .hero-content{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0;
+    }
     .partner-container{
         display: flex;
         flex-direction: column;
@@ -606,54 +622,111 @@ nav{
         text-align: center;
     }
     .reviews{
-        flex-direction: column !important;
+        flex-direction: column;
     }
-    .footer-top, .footer-butoom{
-        scale: 0.8;
+    .reviews .review-header{
+        align-items: center;
+    }
+    .reviews .review-header h2,
+    .reviews .review-header p{
+        text-align: center;
+    }
+    .footer {
+        height: 15vh;
+    }
+    .footer-top{
+        display: none !important;
     }
 }
 
 @media screen and (max-width: 600px) {
-    .nav{
+    nav .nav-container .nav-link{
+        display: none;
+    }
+    nav .nav-container .sign-in{
+        display: none;
+    }
+    .content h1{
+        font-size: var(--h3-font-size);
+        max-width: 100px;
+    }
+    .hero {
+        height: 30vh;
+        display: flex;
+        align-items: center;
         justify-content: center;
     }
-    .nav-container .logo{
-        position: absolute;
-    }
-    nav .nav-container .nav-links{
-        display: none;
-    }
-    .sign-in{
-        display: none;
-    }
-    .container {
-        width: 100%;
-        padding: 20px;
-        flex-direction: row;
-    }
-    .main-container {
-        width: auto;
-        height: 40vh;
-    }
-    .partners{
-        flex-direction: column;
+    .main-container{
         height: auto;
+        scale: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .hero-content{
+        height: auto;
+        align-items: center;
+        justify-content: center;
         text-align: center;
+        padding: 0;
+        width: 90vw;
+        max-width: 500px;
+        scale: 0.6;
+    }
+    .partner-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        gap: 1.5rem;
+    }
+    .partners .title h2{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
     }
     .partner-logos{
         flex-wrap: wrap;
         gap: 2rem;
+        scale: 0.8;
     }
-    .feature-header{
+    #header{
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #header h2, #header p{
         text-align: center;
     }
-    .feature-header p{
-        text-align: center;
-        max-width: 375px;
+    .about-nigga .article-buttom{
+        flex-direction: column;
     }
-    .content {
-        display: none;
+    .article-buttom .mission p{
+        max-width: 75vw;
+    }
+    .article-buttom .list{
+        max-width: 75vw;
+        margin-left: 1rem;
+    }
+    .reviews{
+        flex-direction: column;
+    }
+    .reviews .review-header{
+        align-items: center;
+    }
+    .reviews .review-header h2,
+    .reviews .review-header p{
+        text-align: center;
+    }
+    .review-content .card {
+        scale: 0.8;
+    }
+    .footer {
+        height: 15vh;
+    }
+    .footer-top{
+        display: none !important;
     }
 }
 
